@@ -1,0 +1,47 @@
+baseURL = 'https://moiseenko.tech/'
+title = 'Andrei Moiseenko | Blog'
+languageCode = 'en-us'
+
+[menu]
+  [[menu.main]] 
+    pageRef="/"
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    pageRef="posts"
+    name = 'Posts'
+    url = '/posts/'
+    weight = 20
+  [[menu.main]]
+    pageRef="about"
+    name = 'About'
+    url = '/about/'
+    weight = 30
+
+[params]
+  sitename = 'moiseenko.tech'
+  defaultColor = 'dark'
+  description = 'Blog posts and more.'
+
+[params.author]
+  avatar = "img/avatar.jpg"
+  intro = "Andrei Moiseenko"
+  name = "Andrei Moiseenko"
+  description = "Cloud Engineer | Python Developer | DevOps Enthusiast"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/moiseenko-tech"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://x.com/moiseenko_tech"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/moiseenko-tech/"
+
+[module]
+  [[module.imports]]
+    path = "github.com/hugo-sid/hugo-blog-awesome"
