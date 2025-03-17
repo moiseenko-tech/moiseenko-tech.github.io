@@ -2,3 +2,7 @@
 baseURL: https://moiseenko.tech
 languageCode: en-us
 title: moiseenko.tech
+
+module:
+  imports:
+    - path: "github.com/hugo-sid/hugo-blog-awesome"
