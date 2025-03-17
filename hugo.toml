@@ -25,23 +25,23 @@ languageCode = 'en-us'
   description = 'Blog posts and more.'
 
 [params.author]
-  avatar = "img/avatar.jpg"
-  intro = "Andrei Moiseenko"
-  name = "Andrei Moiseenko"
-  description = "Cloud Engineer | Python Developer | DevOps Enthusiast"
+  avatar = 'img/avatar.jpg'
+  intro = 'Andrei Moiseenko'
+  name = 'Andrei Moiseenko'
+  description = 'Cloud Engineer | Python Developer | DevOps Enthusiast'
 
 [[params.socialIcons]]
-name = "github"
-url = "https://github.com/moiseenko-tech"
+name = 'github'
+url = 'https://github.com/moiseenko-tech'
 
 [[params.socialIcons]]
-name = "twitter"
-url = "https://x.com/moiseenko_tech"
+name = 'twitter'
+url = 'https://x.com/moiseenko_tech'
 
 [[params.socialIcons]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/moiseenko-tech/"
+name = 'linkedin'
+url = 'https://www.linkedin.com/in/moiseenko-tech/'
 
 [module]
   [[module.imports]]
-    path = "github.com/hugo-sid/hugo-blog-awesome"
+    path = 'github.com/hugo-sid/hugo-blog-awesome'
