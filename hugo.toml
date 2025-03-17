@@ -25,7 +25,7 @@ languageCode = 'en-us'
   description = 'Blog posts and more.'
 
 [params.author]
-  avatar = 'img/avatar.jpg'
+  avatar = 'avatar.jpg'
   intro = 'Andrei Moiseenko'
   name = 'Andrei Moiseenko'
   description = 'Cloud Engineer | Python Developer | DevOps Enthusiast'
