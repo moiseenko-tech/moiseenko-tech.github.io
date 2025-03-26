@@ -1,3 +1,21 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://moiseenko.tech/"
+languageCode = "ru-ru"
+title = "Website title"
+
+##### Modules #####
+
+[module]
+  [[module.imports]]
+    # Whether to disable the module but keep version information in the go.* files. Default is false.
+    disable = false
+
+    # Whether to ignore module configuration files, for example, hugo.toml.
+    # This will also prevent loading of any transitive module dependencies. Default is false.
+    ignoreConfig = false
+
+    # Whether to ignore module imports. Default is false.
+    ignoreImports = false
+
+    # The module path, either a valid Go module path (e.g., github.com/gohugoio/myShortcodes)
+    # or the directory name if stored in the themesDir.
+    path = "github.com/hugo-sid/hugo-blog-awesome"
