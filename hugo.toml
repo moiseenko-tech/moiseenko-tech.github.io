@@ -1,6 +1,21 @@
+# https://gohugo.io/configuration/all/
+
+# The absolute URL of your published site including the protocol, host, path, and a trailing slash.
 baseURL = "https://moiseenko.tech/"
+
+# The language tag as described in RFC 5646.
+# This value does not affect localization or URLs.
+# Hugo uses this value to populate:
+#   — The lang attribute of the html element in the embedded alias template
+#   — The language element in the embedded RSS template
+#   — The locale property in the embedded OpenGraph template
 languageCode = "ru-ru"
+
+# The site title.
 title = "Website title"
+
+# Whether to allow emoji in Markdown. Default is false.
+enableEmoji = true
 
 ##### Modules #####
 
@@ -19,3 +34,108 @@ title = "Website title"
     # The module path, either a valid Go module path (e.g., github.com/gohugoio/myShortcodes)
     # or the directory name if stored in the themesDir.
     path = "github.com/hugo-sid/hugo-blog-awesome"
+
+##### Markup #####
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+
+  [markup.highlight]
+    # Whether to render each line number as an HTML anchor element,
+    # setting the id attribute of the surrounding span element to the line number.
+    # Irrelevant if lineNos is false. Default is false.
+    anchorLineNos = false
+
+    # Whether to highlight fenced code blocks. Default is true.
+    codeFences = true
+
+    # Whether to automatically detect the language if the LANG argument is blank or set to a language
+    # for which there is no corresponding lexer. Falls back to a plain text lexer if unable to automatically
+    # detect the language. Default is false.
+    guessSyntax = false
+
+    # A space-delimited list of lines to emphasize within the highlighted code.
+    # To emphasize lines 2, 3, 4, and 7, set this value to 2-4 7.
+    # This option is independent of the lineNoStart option.
+    hl_Lines = ''
+
+    # Whether to render the highlighted code without a wrapping container. Default is false.
+    hl_inline = false
+
+    # When rendering a line number as an HTML anchor element, prepend this value to the id attribute
+    # of the surrounding span element. This provides unique id attributes when a page contains two or more
+    # code blocks. Irrelevant if lineNos or anchorLineNos is false.
+    lineAnchors = ''
+
+    # The number to display at the beginning of the first line.
+    # Irrelevant if lineNos is false. Default is 1.
+    lineNoStart = 1
+
+    # Controls line number display. Default is false.
+    #   — true: Enable line numbers, controlled by lineNumbersInTable.
+    #   — false: Disable line numbers.
+    #   — inline: Enable inline line numbers (sets lineNumbersInTable to false).
+    #   — table: Enable table-based line numbers (sets lineNumbersInTable to true).
+    lineNos = false
+
+    # Whether to render the highlighted code in an HTML table with two cells.
+    # The left table cell contains the line numbers, while the right table cell contains the code.
+    # Irrelevant if lineNos is false. Default is true.
+    lineNumbersInTable = true
+
+    # Whether to use inline CSS styles instead of an external CSS file.
+    # Default is true.
+    # To use an external CSS file, set this value to false and generate the CSS file from the command line:
+    #   hugo gen chromastyles --style=monokai > syntax.css
+    noClasses = false
+
+    # The CSS styles to apply to the highlighted code. Case-sensitive. Default is monokai
+    style = 'monokai'
+
+    # Substitute this number of spaces for each tab character in your highlighted code.
+    # Irrelevant if noClasses is false. Default is 4.
+    tabWidth = 4
+
+    # The class or classes to use for the outermost element of the highlighted code. Default is highlight.
+    wrapperClass = 'highlight'
+
+  [markup.goldmark.renderer]
+    unsafe = true
+
+	[markup.tableOfContents]
+    # Heading levels less than this value will be excluded from the table of contents.
+    # For example, to exclude h1 elements from the table of contents, set this value to 2.
+    # Default is 2.
+		startLevel = 2
+
+    # Heading levels greater than this value will be excluded from the table of contents.
+    # For example, to exclude h4, h5, and h6 elements from the table of contents, set this value to 3.
+    # Default is 3.
+		endLevel = 4
+
+    # Whether to generates an ordered list instead of an unordered list.
+    # Default is false.
+		ordered = false # generates <ul> instead of <ol>
+
+[params]
+  sitename = "Site Name"
+  defaultColor = "dark"
+  goToTop = true
+
+  [params.author]
+    avatar = "avatar.jpg"
+    intro = "Андрей Моисеенко"
+    name = "Андрей Моисеенко"
+    description = "Cloud Engineer | Python Developer | DevOps Enthusiast"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/moiseenko-tech"
+
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/moiseenko_tech"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/moiseenko-tech/"
